@@ -264,6 +264,7 @@ helloHWI.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/ADC.h
 helloHWI.obj: C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h
 helloHWI.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/PWM.h
 helloHWI.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/display/Display.h
+helloHWI.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/Timer.h
 helloHWI.obj: syscfg/ti_drivers_config.h
 helloHWI.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/devices/DeviceFamily.h
 
@@ -794,6 +795,8 @@ C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h:
 C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/PWM.h:
 
 C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/display/Display.h:
+
+C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/Timer.h:
 
 syscfg/ti_drivers_config.h:
 

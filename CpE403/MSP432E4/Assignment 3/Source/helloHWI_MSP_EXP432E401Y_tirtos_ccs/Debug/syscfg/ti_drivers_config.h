@@ -77,6 +77,13 @@ extern const uint_least8_t          CONFIG_PWM_0_CONST;
 
 
 /*
+ *  ======== Timer ========
+ */
+
+extern const uint_least8_t          CONFIG_TIMER_0_CONST;
+#define CONFIG_TIMER_0              0
+
+/*
  *  ======== UART ========
  */
 

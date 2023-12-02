@@ -41,11 +41,13 @@ syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti
 syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/Power.h
 syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/utils/List.h
 syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/power/PowerMSP432E4.h
+syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/Timer.h
+syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/timer/TimerMSP432E4.h
+syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/dpl/HwiP.h
+syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/devices/msp432e4/driverlib/interrupt.h
 syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/uart/UARTMSP432E4.h
 syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/dpl/ClockP.h
-syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/dpl/HwiP.h
 syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/utils/RingBuf.h
-syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/devices/msp432e4/driverlib/interrupt.h
 syscfg/ti_drivers_config.obj: C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/Board.h
 
 syscfg/ti_drivers_config.c:
@@ -130,15 +132,19 @@ C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/utils/List.h:
 
 C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/power/PowerMSP432E4.h:
 
+C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/Timer.h:
+
+C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/timer/TimerMSP432E4.h:
+
+C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/dpl/HwiP.h:
+
+C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/devices/msp432e4/driverlib/interrupt.h:
+
 C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/uart/UARTMSP432E4.h:
 
 C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/dpl/ClockP.h:
 
-C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/dpl/HwiP.h:
-
 C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/utils/RingBuf.h:
-
-C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/devices/msp432e4/driverlib/interrupt.h:
 
 C:/ti/simplelink_msp432e4_sdk_4_20_00_12/source/ti/drivers/Board.h:
 

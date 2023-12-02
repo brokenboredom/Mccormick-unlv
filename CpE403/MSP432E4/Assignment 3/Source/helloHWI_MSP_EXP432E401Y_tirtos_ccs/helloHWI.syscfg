@@ -21,6 +21,8 @@ const PWM      = scripting.addModule("/ti/drivers/PWM", {}, false);
 const PWM1     = PWM.addInstance();
 const Power    = scripting.addModule("/ti/drivers/Power");
 const RTOS     = scripting.addModule("/ti/drivers/RTOS");
+const Timer    = scripting.addModule("/ti/drivers/Timer", {}, false);
+const Timer1   = Timer.addInstance();
 
 /**
  * Write custom configuration values to the imported modules.
@@ -52,6 +54,11 @@ PWM1.$hardware = system.deviceData.board.components.D4;
 PWM1.pwm.$name = "MyPWM1";
 
 RTOS.timer0.resource.$name = "MyTimer1";
+
+Timer1.$name         = "CONFIG_TIMER_0";
+Timer1.timerType     = "32 Bits";
+Timer1.timer.$name   = "MyTimer1";
+Timer1.timer.$assign = "Timer2";
 
 /**
  * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
