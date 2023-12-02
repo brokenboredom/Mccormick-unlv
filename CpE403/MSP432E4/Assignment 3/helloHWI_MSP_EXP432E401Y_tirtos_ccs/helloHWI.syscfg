@@ -1,0 +1,72 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --board "/ti/boards/MSP_EXP432E401Y" --product "simplelink_msp432e4_sdk@4.20.00.12"
+ * @versions {"data":"2020021217","timestamp":"2020021217","tool":"1.4.0+1234","templates":"2020021217"}
+ */
+
+/**
+ * Import the modules used in this configuration.
+ */
+const Display  = scripting.addModule("/ti/display/Display", {}, false);
+const Display1 = Display.addInstance();
+const ADC      = scripting.addModule("/ti/drivers/ADC", {}, false);
+const ADC1     = ADC.addInstance();
+const GPIO     = scripting.addModule("/ti/drivers/GPIO", {}, false);
+const GPIO1    = GPIO.addInstance();
+const GPIO2    = GPIO.addInstance();
+const GPIO3    = GPIO.addInstance();
+const GPIO4    = GPIO.addInstance();
+const PWM      = scripting.addModule("/ti/drivers/PWM", {}, false);
+const PWM1     = PWM.addInstance();
+const Power    = scripting.addModule("/ti/drivers/Power");
+const RTOS     = scripting.addModule("/ti/drivers/RTOS");
+
+/**
+ * Write custom configuration values to the imported modules.
+ */
+Display1.$name                  = "CONFIG_Display_0";
+Display1.$hardware              = system.deviceData.board.components.XDS110UART;
+Display1.uart.$name             = "CONFIG_UART_0";
+Display1.uart.interruptPriority = "3";
+Display1.uart.uart.$name        = "MyUART1";
+
+ADC1.$name     = "CONFIG_ADC_0";
+ADC1.adc.$name = "MyADC1";
+
+GPIO1.$name     = "CONFIG_GPIO_LED_0";
+GPIO1.$hardware = system.deviceData.board.components.D1;
+
+GPIO2.$name     = "CONFIG_GPIO_LED_1";
+GPIO2.$hardware = system.deviceData.board.components.D2;
+
+GPIO3.$hardware = system.deviceData.board.components.D3;
+GPIO3.$name     = "CONFIG_GPIO_LED_2";
+
+GPIO4.$name            = "CONFIG_GPIO_BUTTON_0";
+GPIO4.$hardware        = system.deviceData.board.components.USR_SW1;
+GPIO4.callbackFunction = "hwiFxn";
+
+PWM1.$name     = "CONFIG_PWM_0";
+PWM1.$hardware = system.deviceData.board.components.D4;
+PWM1.pwm.$name = "MyPWM1";
+
+RTOS.timer0.resource.$name = "MyTimer1";
+
+/**
+ * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
+ * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
+ * re-solve from scratch.
+ */
+Display1.uart.uart.$suggestSolution       = "UART0";
+Display1.uart.uart.txPin.$suggestSolution = "34";
+Display1.uart.uart.rxPin.$suggestSolution = "33";
+ADC1.adc.$suggestSolution                 = "ADC0";
+ADC1.adc.adcPin.$suggestSolution          = "12";
+GPIO1.gpioPin.$suggestSolution            = "108";
+GPIO2.gpioPin.$suggestSolution            = "107";
+GPIO3.gpioPin.$suggestSolution            = "46";
+GPIO4.gpioPin.$suggestSolution            = "116";
+PWM1.pwm.$suggestSolution                 = "PWM0";
+PWM1.pwm.pwmPin.$suggestSolution          = "42";
+RTOS.timer0.resource.$suggestSolution     = "Timer0";
